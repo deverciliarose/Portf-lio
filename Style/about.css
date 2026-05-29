@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #0a0a0a;
+    --secound-bg-color: #111827;
+    --main-color: #0052FF;
+    --hover-color: #0066FF;
+    --text-color: #ffffff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.About h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+}
+span{
+    color: var(--main-color);
+}
+.descricao-container{
+    display: flex;
+}
+.descricao{
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: 70px;
+}
+.descricao h3{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-color);
+}
+.descricao p{
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.image-about{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    right: 0;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.shape{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(
+        180deg,
+        #0052FF,
+        #0066FF
+    );
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        55% 100%,
+        45% 100%
+    );
+    border-radius: 30px;
+    
+}
+.shape img{
+    position: relative;
+    width: 280px;
+    z-index: 2;
+    margin-left: 40px;
+    
+}
+.soft-title{
+    font-size: 3rem;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.soft-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 12px;
+}
+.soft-card i{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.soft-card h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.tech-stack h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.tech-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+.tech-card i{
+    font-size: 30px;
+}
+.tech-card span{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .4s;
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 1rem;
+}
+.tech-card:hover span{
+    opacity: 1;
+    transform: translateY(0);
+}
+.currently-learning h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+.currently-learning span{
+    color: var(--main-color);
+}
+.currently-learning ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.currently-learning ul li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
