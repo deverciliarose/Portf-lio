@@ -83,7 +83,7 @@ span{
     position: relative;
     width: 280px;
     z-index: 2;
-    margin-left: 40px;
+    margin-left: 10px;
     
 }
 .soft-title{
@@ -92,6 +92,7 @@ span{
 }
 .cards{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
     margin-top: 30px;
@@ -99,6 +100,7 @@ span{
 .soft-card{
     display: flex;
     flex-direction: column;
+    flex-basis: 200px;
     align-items: center;
     text-align: center;
     border-top: 2px solid var(--main-color);
@@ -121,12 +123,16 @@ span{
 }
 .tech-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
     gap: 40px;
 }
 .tech-card i{
+    display: flex;
     font-size: 30px;
+    flex-basis: 200px;
+    justify-content: center;
 }
 .tech-card span{
     opacity: 0;
@@ -150,11 +156,40 @@ span{
 }
 .currently-learning ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     list-style-type: none;
 }
 .currently-learning ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 200px;
     font-size: 20px;
     margin-bottom: 10px;
+}
+@media(max-width: 768px){
+    .descricao-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .descricao{
+        max-width: 90%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .descricao p{
+        margin-left: 0;
+    }
+    .image-about{
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: -30px;
+    }
 }
