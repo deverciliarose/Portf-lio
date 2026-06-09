@@ -36,5 +36,6 @@ document
     .forEach(btn => {
         btn.addEventListener("click", abrirCurriculo);
     });
+    console.log(document.querySelector("#mobile-curriculo"));
 
 

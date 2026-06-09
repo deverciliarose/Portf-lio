@@ -248,6 +248,7 @@ span {
     bottom: -80px;
     transform: translateX(-50%);
     z-index: 2;
+    
 }
 .mobile-content h3{
     text-align: center;
@@ -271,6 +272,10 @@ span {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+#mobile-curriculo{
+    position: relative;
+    z-index: 999;
 }
 .social-media a{
    display: flex;
